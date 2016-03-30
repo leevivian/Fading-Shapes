@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.vivian.fadingshapes.MainActivity">
+
+    <TextView
+        android:id="@+id/textViewRectangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Number of Rectangles"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of Circles"
+        android:id="@+id/textViewCircle"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/shapesLayout" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/shapesLayout"
+        android:layout_alignEnd="@+id/shapesLayout" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rect"
+        android:id="@+id/rectangle"
+        android:layout_below="@+id/shapesLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+     />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Circ"
+        android:id="@+id/circle"
+        android:layout_below="@+id/shapesLayout"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:id="@+id/shapesLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewRectangle"
+        android:layout_above="@+id/clear">
+
+    </RelativeLayout>
+
+</RelativeLayout>
