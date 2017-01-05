@@ -6,6 +6,7 @@ The user may also create shapes via a command with parameters.
 The purpose of this project is to apply concepts such as parsing, regular expressions, and abstract syntax trees into one application, which can draw shapes and do arithmetic. The FourFP Interpreter includes a command line that takes in statements from a user. The input is then parsed, interpreted, and some form of output is displayed on the view, given the user’s statement was valid (in terms of the FourFP language). 
 
 The FourFP language is as follows:
+
 1. Each line shall contain a statement.
 
   1.1. Each statement shall end with a semicolon.
